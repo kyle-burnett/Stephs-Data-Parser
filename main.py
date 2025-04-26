@@ -52,7 +52,7 @@ def get_amount_of_calls(file: str) -> int:
             continue
     return call_count
 
-def build_data(num_calls: int) -> dict[str, list[None]]:
+def build_columns(num_calls: int) -> dict[str, list[None]]:
     """ Build our empty dict sized for the total number of calls"""
     data = {
             'Date': [None] * num_calls,
@@ -94,7 +94,7 @@ def set_timestamps(matches: list[str], timestamps: dict, data: dict, idx: int):
             data[matches[3]][idx] = 'N/A'
 
 def read_input(file: str, num_calls: int) -> dict[str, list[str]]:
-    data = build_data(num_calls)
+    data = build_columns(num_calls)
 
     with open(file, "r") as file:
         call_count = 0
