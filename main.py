@@ -14,8 +14,7 @@ CALL_NUMBER_PATTERN = r"^\d{2}-\d{1,9}"
 # 01/01/2025
 CALL_DATE_PATTERN = r"\d{2}/\d{2}/\d{4}"
 
-# Match the call metadata pattern like
-# 25-4 0056 Radio - AMB TRANSPORT Transported to Hospital 3
+# Match the call metadata pattern
 CALL_METADATA_PATTERN = r"^(\S+)\s(\d{4})\s(.*?\s-\s.*?\s.*?)\s+(.+?)\s+(\d?)$"
 
 
