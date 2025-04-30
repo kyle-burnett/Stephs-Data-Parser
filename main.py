@@ -8,7 +8,7 @@ TIMESTAMP_PATTERN = r"(\w+)-(\d{2}:\d{2}:\d{2})"
 
 # Match the call number pattern like
 # 25-4764
-CALL_NUMBER_PATTERN = r"^\d{2}-\d{1,9}"
+CALL_NUMBER_PATTERN = r"^2\d-\d{1,9} "
 
 # Match the call date pattern like
 # 01/01/2025
